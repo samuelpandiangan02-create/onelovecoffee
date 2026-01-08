@@ -1,0 +1,82 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+
+  background-image: url("/img/biji kopi.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+
+.heroContent {
+  position: relative;
+  text-align: center;
+  max-width: 900px;
+  padding: 0 1rem;
+}
+.heroTitle {
+  font-family: Impact;
+  font-size: 6rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #b25600, #f2f6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+
+.heroSubtitle {
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #b25600, #f2f6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+
+.heroButton {
+  display: inline-block;
+  padding: 0.75rem 2.2rem;
+  background-color: #b25600;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1.5rem;
+}
+
+.heroButton:hover {
+  background-color: #000000;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+}
